@@ -14,6 +14,11 @@ function App() {
   const [units, setUnits] = useState("metric");
   const [weather, setWeather] = useState(null);
 
+  /* TO DO
+    Dynaaminen tausta
+    dynaaminen tuulen nopeus
+  */
+
   useEffect(() => {
     const fetchWeather = async () => {
       const message = query.q ? query.q : "current location.";
